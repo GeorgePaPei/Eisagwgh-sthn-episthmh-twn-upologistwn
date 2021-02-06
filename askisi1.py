@@ -1,8 +1,17 @@
 import numpy as np
 import random
-a = int(input("Parakalw eisagetai th diastash tou tetragwnou (akeraios arithmos):"))
-while(a<=0):
-    a = int(input("H diastash tou tetragwnou prepei na einai megaluterh tou 0:"))
+
+while True:
+    try:
+        a = int(input("Parakalw eisagetai th diastash tou tetragwnou.\nH diastash prepei na einai enas akeraios arithmos megaluteros tou 0:"))
+        while(a<=0):
+            a = int(input("H diastash tou tetragwnou prepei na einai megaluterh tou 0:"))
+        break
+    except ValueError:
+        print("\nH diastash prepei na einai akeraios arithmos.")
+        
+
+    
 if(a<4):
     print("H diastash tou tetragwnou einai mikroterh tou 4. Ara den yparxoun tetrades.")
 lista = []
