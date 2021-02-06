@@ -19,12 +19,12 @@ for char in text:
     list1.append(char)
     list2.append(i)
 
-list3 = [] #pososto emfanisis epi tis ekato gia kathe xarakthra
+list3 = [] #h list3 tha periexei to pososto emfanisis epi tis ekato gia kathe xarakthra.
 for i in range(len(list1)):
     a = (list2[i]/number_of_chars)*100
     list3.append(math.ceil(a))
     
-#emfanish twn statistikwn kathe grammatos
+#emfanish twn statistikwn kathe grammatos.
 for i in range(len(list1)):
     temp_string = list1[i]+":"
     for z in range(list3[i]):
